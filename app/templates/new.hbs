@@ -1,0 +1,11 @@
+<h1>New Recipe</h1>
+
+<form>
+  {{input type="text" class="create-title" placeholder="New Title" value=newTitle}}
+
+  {{textarea class="create-body" placeholder="Enter some text." value=newBody}}
+
+  <button {{action "createPost" newTitle newBody}}>Create New Post</button>
+</form>
+
+{{outlet}}
