@@ -2,10 +2,17 @@
 
 <form>
   {{input type="text" class="create-title" placeholder="New Title" value=newTitle}}
+  {{input type="text" class="create-name" placeholder="New Name" value=newName}}
+  {{input type="text" class="create-author" placeholder="New Author" value=newAuthor}}
+  {{input type="text" class="create-recipe-type" placeholder="New Recipe Type" value=newRecipeType}}
+  {{input type="text" class="create-prep-time" placeholder="New Prep Time" value=newPrepTime}}
+  {{input type="text" class="create-cook-time" placeholder="New Cook Time" value=newCookTime}}
+  {{input type="text" class="create-cook-temp" placeholder="New Cook Temp" value=newCookTemp}}
+  {{input type="text" class="create-cook-temp-units" placeholder="Temperature Units" value=newCookTempUnits}}
+  {{input type="text" class="create-yield-number" placeholder="New Yield Number" value=newYieldNumber}}
+  {{input type="text" class="create-yield-name" placeholder="New Yield Name" value=newYieldName}}
 
-  {{textarea class="create-body" placeholder="Enter some text." value=newBody}}
-
-  <button {{action "createPost" newTitle newBody}}>Create New Post</button>
+  <button {{action "createPost" newTitle newBody newAuthor newRecipeType newPrepTime newCookTime newCookTemp newCookTempUnits newYieldNumber newYieldName}}>Create New Recipe</button>
 </form>
 
 {{outlet}}
