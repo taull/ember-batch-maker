@@ -2,15 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   actions: {
-    createPost: function(newTitle, newBody) {
-      var self = this;
-      var info = {title: newTitle, body: newBody};
-      Ember.$.ajax("https://api.parse.com/1/classes/Post/", {
+    createRecipe: function(newName, newDescription) {
+      // var self = this;
+      var info = {name: newName, description: newDescription};
+      Ember.$.ajax("https://api.parse.com/1/classes/", {
         type: "POST",
         data: JSON.stringify(info)
       }).done(function() {
-        self.modelFor('posts').addObject(info);
-        self.transitionTo('posts');
+        console.log(name);
       });
 
     }
