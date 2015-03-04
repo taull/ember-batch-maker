@@ -1,1 +1,17 @@
 {{outlet}}
+
+<ul>
+  {{#each post in model}}
+  <li>
+    <p>{{post.title}}</p>
+    <p>{{post.author}}</p>
+    <p>{{post.recipeType}}</p>
+    <p>{{post.prepTime}}</p>
+    <p>{{post.cookTime}}</p>
+    <p>{{post.cookTempUnits}}</p>
+    <p>{{post.yieldNumber}}</p>
+    <p>{{post.yieldUnits}}</p>
+    
+  </li>
+  {{/each}}
+</ul>
