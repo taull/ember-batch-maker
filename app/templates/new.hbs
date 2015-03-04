@@ -12,9 +12,9 @@
   {{view "select"  value=newCookTempUnits content=temperatureUnit}}
 
   {{input type="text" class="create-yield-number" placeholder="Yield Number" value=newYieldNumber}}
-  {{input type="text" class="create-yield-name" placeholder="Yield Units" value=newYieldUnits}}
+  {{input type="text" class="create-yield-units" placeholder="Yield Units" value=newYieldUnits}}
 
-  <button {{action "createPost" newTitle newBody newAuthor newRecipeType newPrepTime newCookTime newCookTemp newCookTempUnits newYieldNumber newYieldUnits}}>Create New Recipe</button>
+  <button {{action "createPost" newTitle newAuthor newRecipeType newPrepTime newCookTime newCookTemp newCookTempUnits newYieldNumber newYieldUnits}}>Create New Recipe</button>
 </form>
 
 {{outlet}}
