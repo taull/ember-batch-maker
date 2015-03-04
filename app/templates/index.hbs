@@ -1,1 +1,9 @@
-{{outlet}}
+<section>
+    <ul>
+      {{#each post in model}}
+        <li>
+          <h2>{{post.title}}</h2> <h3>{{post.author}}</h3> <h4>{{post.updatedAt}}</h4>
+        </li>
+      {{/each}}
+    </ul>
+</section>
