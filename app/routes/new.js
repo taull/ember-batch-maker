@@ -9,8 +9,7 @@ export default Ember.Route.extend({
         type: "POST",
         data: JSON.stringify(info)
       }).done(function() {
-        self.modelFor('posts').addObject(info);
-        self.transitionTo('posts');
+        console.log(name);
       });
 
     }
