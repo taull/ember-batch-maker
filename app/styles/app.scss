@@ -1,2 +1,80 @@
 @import "bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "bower_components/neat/app/assets/stylesheets/neat";
+
+
+.form-container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.form-avatar {
+  display:inline-block;
+  width:250px;
+  height:250px;
+  border:1px solid #f0f0f0;
+  vertical-align:top;
+  margin-right:10px;
+}
+
+.form-title {
+  display:inline-block;
+  vertical-align:top;
+}
+
+.form-recipe-type p {
+  margin:0;
+  font-family: sans-serif;
+  font-size:10px;
+  color:#555;
+  text-align:right;
+  display:inline-block;
+}
+
+.form-recipe-type {
+  margin-bottom:10px;
+  border-bottom:1px solid #f0f0f0;
+  padding-bottom:10px;
+
+}
+
+.select-recipe-type {
+  display:inline-block;
+}
+
+.create-title,
+.create-author {
+  display:block;
+  width:400px;
+  height:30px;
+  margin-bottom:10px;
+  padding-left:5px;
+  border:1px solid #f0f0f0;
+}
+
+
+
+.create-prep-time,
+.create-cook-time,
+.create-cook-temp,
+.create-yield-number,
+.create-yield-units {
+  display:inline-block;
+  width:100px;
+  height:30px;
+  border: 1px solid #f0f0f0;
+  padding-left:5px;
+  margin-bottom:10px;
+}
+
+.select-temp-units {
+
+}
+
+.submit-recipe {
+  width: 150px;
+  height:35px;
+  border: none;
+  background: #b6dfdf;
+  color:#000;
+  font-family: sans-serif;
+}
