@@ -2,11 +2,11 @@
 <section>
     <ul>
       {{#each post in model}}
-      <a href>
-        <li>
-          <h1>{{post.title}}</h1> <h4>{{post.updatedAt}}</h4>
-        </li>
-      </a>
+        {{#link-to 'show'}}
+          <li>
+            <h1>{{post.title}}</h1> <h4>{{post.updatedAt}}</h4>
+          </li>
+        {{/link-to}}
       {{/each}}
     </ul>
 </section>
