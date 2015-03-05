@@ -2,9 +2,11 @@
 <section>
     <ul>
       {{#each post in model}}
+      <a href>
         <li>
-          <h2>{{post.title}}</h2> <h3>{{post.author}}</h3> <h4>{{post.updatedAt}}</h4>
+          <h1>{{post.title}}</h1> <h4>{{post.updatedAt}}</h4>
         </li>
+      </a>
       {{/each}}
     </ul>
 </section>
