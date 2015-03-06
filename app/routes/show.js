@@ -8,3 +8,10 @@ export default Ember.Route.extend({
     });
   }
 });
+
+
+// App.PhotoRoute = Ember.Route.extend({
+//   model: function(params) {
+//     return Ember.$.getJSON('/photos/'+params.photo_id);
+//   }
+// });
